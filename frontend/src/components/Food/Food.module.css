@@ -1,0 +1,129 @@
+.add {
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.AddButton {
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #ffa600c2;
+
+}
+
+.search {
+    width: 60%;
+    margin-right: 30px;
+
+}
+
+.recipe {
+    justify-content: center;
+    display: flex;
+    color: rgb(19, 187, 0);
+
+}
+
+
+
+.title {
+    display: grid;
+    justify-content: center;
+
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: rgba(0, 128, 0, 0.873);
+    margin-top: 15px;
+}
+
+
+
+.Images {
+    height: 350px;
+
+
+
+}
+
+
+h2 {
+    color: rgba(0, 128, 0, 0.873);
+    margin: 0;
+}
+
+
+
+.icon {
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    color: rgba(0, 128, 0, 0.873);
+}
+
+.iconPerson {
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+
+    justify-content: start;
+    color: rgba(0, 128, 0, 0.873);
+}
+
+.detail {
+    font-weight: bold;
+}
+
+li {
+    font-weight: bold;
+}
+
+.buton {
+    background: rgba(0, 128, 0, 0.873);
+}
+
+.ContentGrid {
+    padding: 0 !important;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: rgba(2, 19, 2, 0.873);
+    font-style: italic;
+}
+
+.container {
+
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.83);
+    padding: 20px;
+
+
+}
+
+.titleRecipe {
+
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .add {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+
+    .addPage {
+
+        margin: 0;
+
+    }
+}

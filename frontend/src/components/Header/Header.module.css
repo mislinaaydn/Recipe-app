@@ -1,0 +1,46 @@
+.control {
+    display: block;
+    border-radius: 20px !important;
+    font-weight: normal !important;
+    margin-right: 20px;
+    align-items: center;
+    margin-top: 0;
+    font-size: 15px !important;
+
+
+
+}
+
+h3 {
+    font-family: "DM Serif Display", serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.controlnav {
+    display: block;
+    border-radius: 20px !important;
+    font-weight: normal !important;
+    margin-right: 20px;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 2px solid rgb(135, 255, 108) !important;
+    padding: 18px !important;
+    background: rgba(167, 255, 66, 0.223) !important;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+header {
+    opacity: 90%;
+    background: #f5f5f5;
+    font-size: 20px !important;
+}
+
+h3 {
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,59 @@
+import React, { useEffect, useState } from "react";
+import Category from "../components/Category/CategoryPage";
+import { Anchor, Breadcrumbs, Grid } from "@mantine/core";
+import SearchPage from "../components/HomePage/SearchPage";
+import AddFood from "../components/Food/AddFoodButton";
+import CardList from "../components/Card/CardList";
+import { getallFood } from "../../api";
+
+const items = [
+  { title: "Anasayfa", href: "/" },
+  { title: "Benim Yemek Tariflerim", href: "/my-recipe" },
+].map((item, index) => (
+  <Anchor href={item.href} key={index}>
+    {item.title}
+  </Anchor>
+));
+function MyRecipe() {
+  const [allRecipes, setAllRecipes] = useState([]);
+
+  async function getFood() {
+    try {
+      const response = await getallFood();
+      setAllRecipes(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+      setError("Failed to fetch recipes");
+    } finally {
+    }
+  }
+
+  useEffect(() => {
+    getFood();
+  }, []);
+
+  return (
+    <>
+      <div>
+        <Breadcrumbs separator="→" separatorMargin="md" mb="sm">
+          {items}
+        </Breadcrumbs>
+      </div>
+
+      <Grid>
+        <Grid.Col span={{ base: 12, md: 4, lg: 3 }}>
+          <Category></Category>
+        </Grid.Col>
+
+        <Grid.Col span={{ base: 12, md: 8, lg: 9 }}>
+          <AddFood></AddFood>
+          <SearchPage></SearchPage>
+          <CardList recipes={allRecipes}></CardList>
+        </Grid.Col>
+      </Grid>
+    </>
+  );
+}
+
+export default MyRecipe;

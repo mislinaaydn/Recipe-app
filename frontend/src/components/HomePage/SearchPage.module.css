@@ -1,0 +1,13 @@
+.searchpage {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.search {
+    width: 60%;
+}
+
+.filter {
+    width: 20%;
+}

@@ -1,0 +1,70 @@
+* {
+
+    text-decoration: none;
+
+
+}
+
+a {
+    color: black;
+}
+
+
+
+.AiFillFire {
+    font-size: 26px !important;
+    color: rgb(255, 145, 0);
+}
+
+Z .AiFillFire :hover {
+    color: green !important;
+}
+
+.AiFillEdit {
+    font-size: 26px !important;
+    color: gray;
+
+}
+
+.AiFillEdit :hover {
+    color: green;
+
+}
+
+.groupContainer {
+    display: flex;
+    align-items: center;
+    /* Dikeyde ortalar */
+    gap: 16px;
+    /* Aralarındaki boşluğu ayarlar */
+}
+
+.avatarWrapper {
+    display: flex;
+    align-items: center;
+    /* Dikeyde ortalar */
+    gap: 8px;
+    /* Aralarındaki boşluğu ayarlar */
+}
+
+.person {
+    white-space: nowrap;
+    /* Metnin tek satırda kalmasını sağlar */
+    overflow: hidden;
+    /* Taşan metni gizler */
+    text-overflow: ellipsis;
+    /* Taşan metin için üç nokta ekler */
+    max-width: 200px;
+    /* Metin genişliğini sınırlar */
+}
+
+
+.card {
+    padding: 12px !important;
+    margin: 8px;
+    border: 1px solid rgba(0, 128, 0, 0.293)
+}
+
+.title {
+    color: rgb(0, 61, 0);
+}
